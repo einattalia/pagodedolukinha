@@ -1,17 +1,27 @@
-# Pagode do Lukinha — v2
+# Pagode do Lukinha — V12 Admin
 
-Atualizações desta versão:
-- paleta 1: preto, creme e vermelho queimado;
-- logo maior;
-- remoção completa da seção Música e do item Música no header;
-- Instagram clicável no header e contratação;
-- seção final “Quer o Lukinha no seu evento?” com a foto Mar-52.jpg como background;
-- contato de contratação: Carrapicho Rangel — (16) 98101-0940;
-- seção Vídeos;
-- Admin > Vídeos com título, link do YouTube e descrição;
-- player do YouTube gerado automaticamente no site;
-- Agenda expansível com fade-in mantida.
+## O que entrou
+- novo `/admin.html` responsivo;
+- login;
+- Dashboard;
+- edição da Home;
+- CRUD completo de Agenda (criar, editar e excluir);
+- CRUD completo de Vídeos do YouTube;
+- edição de “Por trás da resenha”;
+- edição de contato, WhatsApp e Instagram;
+- site público já lê as alterações do admin;
+- integração preparada para Supabase Auth + Database;
+- fallback local para testar antes de conectar o Supabase.
 
-Abra `index.html`. Para testar o painel, abra `admin.html` no mesmo navegador/origem.
+## Teste local
+Abra `admin.html` no mesmo domínio/origem do site.
+Login de demonstração: `admin@lukinha.local` / `lukinha`.
 
-Observação: esta versão usa localStorage como protótipo. Para produção/múltiplos dispositivos, conectar o CRUD ao Supabase.
+## Produção com Supabase
+1. Crie/abra o projeto Supabase.
+2. Rode `supabase-schema.sql` no SQL Editor.
+3. Em Authentication, crie o usuário administrador.
+4. Preencha `supabase-config.js` com Project URL e a chave pública `anon`.
+5. Faça deploy. O admin passa automaticamente do modo local para Supabase.
+
+Nunca coloque `service_role` no frontend.
