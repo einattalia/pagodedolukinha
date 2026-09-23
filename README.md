@@ -46,3 +46,15 @@ Correção definitiva do alinhamento da Agenda: data, cidade e botão + agora us
 - Execute `supabase-schema.sql` no SQL Editor do projeto antes de usar o Admin, caso as tabelas/policies ainda não existam.
 - O login do Admin passa a usar Supabase Auth quando a configuração acima está presente.
 - Nunca adicione `service_role` ou Secret key ao frontend.
+
+## V20 — vídeos consistentes
+- Todos os cards públicos usam proporção fixa 16:9 em desktop e mobile.
+- Títulos ficam limitados a 2 linhas e os cards mantêm altura visual consistente.
+- Mobile preserva 3 cards por linha sem transformar thumbnails em quadrados.
+- A ordem pública é sempre `sort_order ASC`, igual à definida por arrastar no Admin, com fallback determinístico por criação.
+
+## V21 — Mobile alinhado ao desktop
+- Por Trás da Resenha mantém Lucas visível à esquerda no mobile, seguindo a composição desktop.
+- Texto permanece à direita com degradê localizado para legibilidade.
+- Imagem usa altura integral da seção sem deformação e sem cortar Lucas.
+- Reforçada proporção 16:9 dos vídeos e preservada a hierarquia visual entre dispositivos.
