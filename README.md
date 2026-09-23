@@ -1,4 +1,4 @@
-# Pagode do Lukinha — V12 Admin
+# Pagode do Lukinha — V13 Admin
 
 ## O que entrou
 - novo `/admin.html` responsivo;
@@ -15,13 +15,13 @@
 
 ## Teste local
 Abra `admin.html` no mesmo domínio/origem do site.
-A V13 está conectada ao projeto Supabase `pagodedolukinha`. O acesso ao Admin usa Supabase Auth; crie o usuário em Authentication → Users.
+Login de demonstração: `admin@lukinha.local` / `lukinha`.
 
 ## Produção com Supabase
 1. Crie/abra o projeto Supabase.
 2. Rode `supabase-schema.sql` no SQL Editor.
 3. Em Authentication, crie o usuário administrador.
-4. `supabase-config.js` já contém a Project URL e a publishable key pública do projeto `pagodedolukinha`.
+4. Preencha `supabase-config.js` com Project URL e a chave pública `anon`.
 5. Faça deploy. O admin passa automaticamente do modo local para Supabase.
 
 Nunca coloque `service_role` no frontend.
