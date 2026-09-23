@@ -25,3 +25,7 @@ Login de demonstração: `admin@lukinha.local` / `lukinha`.
 5. Faça deploy. O admin passa automaticamente do modo local para Supabase.
 
 Nunca coloque `service_role` no frontend.
+
+
+## V15 — Ordem dos vídeos
+No Admin > Vídeos, arraste os cards pelo ícone ☰. A ordem é persistida no campo `sort_order` do Supabase (ou no armazenamento local durante testes) e a página pública respeita essa sequência.
