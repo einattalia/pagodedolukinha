@@ -29,3 +29,6 @@ Nunca coloque `service_role` no frontend.
 
 ## V15 — Ordem dos vídeos
 No Admin > Vídeos, arraste os cards pelo ícone ☰. A ordem é persistida no campo `sort_order` do Supabase (ou no armazenamento local durante testes) e a página pública respeita essa sequência.
+
+## V16
+Correção definitiva do alinhamento da Agenda: data, cidade e botão + agora usam faixas flex independentes, impedindo sobreposição em desktop e mobile.
