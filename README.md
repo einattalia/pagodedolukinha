@@ -58,3 +58,8 @@ Correção definitiva do alinhamento da Agenda: data, cidade e botão + agora us
 - Texto permanece à direita com degradê localizado para legibilidade.
 - Imagem usa altura integral da seção sem deformação e sem cortar Lucas.
 - Reforçada proporção 16:9 dos vídeos e preservada a hierarquia visual entre dispositivos.
+
+## V22 — Por Trás da Resenha mobile
+- Mantém a fotografia inteira no mobile na proporção original 16:9 (2048×1152), sem crop/zoom.
+- Preserva a composição do desktop: fotografia como cena completa e texto sobreposto no lado direito.
+- Tipografia e espaçamentos escalam proporcionalmente em telas menores, sem reorganizar a seção.

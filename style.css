@@ -698,3 +698,69 @@ img,iframe{max-width:100%}
   .behind-copy h2{font-size:clamp(38px,11.5vw,50px) !important;}
   .behind-copy p{font-size:11px !important;line-height:1.42 !important;}
 }
+
+/* V22 — Por Trás da Resenha no mobile: mesma composição do desktop, foto inteira */
+@media (max-width: 900px){
+  #sobre.split{
+    /* A imagem original é 2048×1152 (16:9). A seção passa a respeitar exatamente essa proporção. */
+    width:100% !important;
+    min-height:0 !important;
+    height:auto !important;
+    aspect-ratio:16 / 9 !important;
+    padding:0 5.5vw !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-end !important;
+    background-color:#090909 !important;
+    background-image:
+      linear-gradient(90deg,rgba(5,5,5,.04) 0%,rgba(5,5,5,.10) 42%,rgba(5,5,5,.76) 100%),
+      url('assets/agenda-bg.jpg') !important;
+    background-size:100% 100%, 100% auto !important;
+    background-position:center, center !important;
+    background-repeat:no-repeat !important;
+    overflow:hidden !important;
+  }
+  #sobre.split:before{
+    background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.16)) !important;
+  }
+  #sobre .behind-copy{
+    width:44% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    text-align:left !important;
+    transform:none !important;
+  }
+  #sobre .behind-copy .eyebrow{
+    font-size:clamp(6px,1.65vw,10px) !important;
+    letter-spacing:.16em !important;
+  }
+  #sobre .behind-copy h2{
+    font-size:clamp(27px,8vw,62px) !important;
+    line-height:.76 !important;
+    margin:clamp(4px,1.1vw,9px) 0 clamp(6px,1.8vw,14px) !important;
+  }
+  #sobre .behind-copy p{
+    max-width:100% !important;
+    font-size:clamp(7px,1.85vw,12px) !important;
+    line-height:1.42 !important;
+    color:#f0e8dd !important;
+    margin:0 !important;
+  }
+}
+
+@media (max-width: 430px){
+  #sobre.split{
+    min-height:0 !important;
+    aspect-ratio:16 / 9 !important;
+    padding:0 4.5vw !important;
+    background-size:100% 100%, 100% auto !important;
+    background-position:center, center !important;
+  }
+  #sobre .behind-copy{
+    width:45% !important;
+    max-width:none !important;
+  }
+  #sobre .behind-copy h2{font-size:clamp(26px,8vw,36px) !important;}
+  #sobre .behind-copy p{font-size:clamp(6.5px,1.8vw,8px) !important;line-height:1.38 !important;}
+}
