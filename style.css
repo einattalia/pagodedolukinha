@@ -429,3 +429,89 @@ footer div{font-size:10px!important;gap:18px!important;}
   .agenda-list .show-head > .date{flex-basis:92px !important;width:92px !important;max-width:92px !important;padding-right:12px !important;}
   .agenda-list .show-head > .plus{flex-basis:24px !important;width:24px !important;}
 }
+
+/* V17 — responsividade consolidada */
+html,body{max-width:100%;overflow-x:hidden}
+img,iframe{max-width:100%}
+
+@media (max-width: 900px){
+  header{height:74px!important;padding:0 18px!important;gap:12px!important;display:flex!important;}
+  header .brand{flex:0 0 auto!important;min-width:0!important;}
+  header .brand img{width:172px!important;max-height:48px!important;height:auto!important;}
+  header nav{display:none!important;}
+  header>.pill{font-size:11px!important;padding:11px 14px!important;margin-left:auto!important;white-space:nowrap!important;}
+
+  .hero{min-height:auto!important;padding:92px 18px 0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;}
+  .hero-copy{width:100%!important;padding:22px 0 0!important;position:relative!important;z-index:3!important;}
+  .hero-kicker{font-size:11px!important;letter-spacing:.16em!important;}
+  .hero .hero-side-copy{font-size:clamp(52px,15vw,78px)!important;line-height:.82!important;max-width:100%!important;margin:12px 0 22px!important;}
+  .hero-actions{display:flex!important;gap:10px!important;flex-wrap:wrap!important;}
+  .hero-actions .btn{padding:12px 16px!important;font-size:11px!important;}
+  .hero-visual{width:100%!important;min-height:410px!important;height:48svh!important;margin-top:2px!important;overflow:visible!important;display:flex!important;justify-content:center!important;align-items:flex-end!important;}
+  .hero-photo{width:min(126%,620px)!important;height:100%!important;max-width:none!important;margin:0!important;object-fit:contain!important;object-position:center bottom!important;}
+
+  .agenda{padding:54px 18px!important;background-position:center!important;}
+  .agenda-layout{display:block!important;}
+  .agenda-intro{margin-bottom:28px!important;}
+  .agenda-intro h2{font-size:clamp(54px,16vw,76px)!important;line-height:.82!important;}
+  .agenda-list{width:100%!important;min-width:0!important;}
+  .agenda-list .show{width:100%!important;}
+  .agenda-list .show-head{display:grid!important;grid-template-columns:92px minmax(0,1fr) 28px!important;align-items:center!important;column-gap:12px!important;width:100%!important;min-width:0!important;}
+  .agenda-list .show-head>.date{width:auto!important;max-width:none!important;min-width:0!important;flex:none!important;padding:0!important;white-space:nowrap!important;font-size:27px!important;line-height:1!important;}
+  .agenda-list .show-head>.city{width:auto!important;min-width:0!important;padding:0!important;font-size:20px!important;line-height:1.05!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;}
+  .agenda-list .show-head>.plus{width:28px!important;min-width:28px!important;max-width:28px!important;flex:none!important;text-align:right!important;}
+  .details,.show.open .details{padding-left:0!important;}
+
+  .videos{padding:58px 14px 70px!important;}
+  .videos h2{font-size:clamp(56px,17vw,82px)!important;}
+  .videos .lead{font-size:13px!important;margin-bottom:26px!important;}
+  .videos .video-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;width:100%!important;}
+  .videos .video-card{min-width:0!important;overflow:hidden!important;}
+  .videos .video-frame{aspect-ratio:1/1!important;}
+  .videos .video-thumb{width:100%!important;height:100%!important;object-fit:cover!important;}
+  .videos .video-copy{padding:8px 5px 9px!important;}
+  .videos .video-copy h3,.videos .video-card:not(:first-child) .video-copy h3{font-size:clamp(11px,3.1vw,14px)!important;line-height:1.08!important;display:-webkit-box!important;-webkit-line-clamp:2!important;-webkit-box-orient:vertical!important;overflow:hidden!important;}
+  .videos .video-play{width:34px!important;height:34px!important;font-size:12px!important;}
+
+  .split{min-height:72svh!important;padding:58px 18px!important;background-position:34% center!important;display:flex!important;align-items:flex-end!important;}
+  .behind-copy{width:100%!important;max-width:560px!important;}
+  .behind-copy h2{font-size:clamp(58px,17vw,82px)!important;line-height:.84!important;}
+  .behind-copy p{font-size:14px!important;line-height:1.6!important;max-width:92%!important;}
+
+  .booking{min-height:68svh!important;padding:64px 18px!important;background-position:center!important;display:flex!important;align-items:flex-end!important;}
+  .booking-content{width:100%!important;}
+  .booking h2{font-size:clamp(54px,15vw,78px)!important;line-height:.84!important;}
+  .booking p:not(.eyebrow){font-size:14px!important;max-width:90%!important;}
+  .booking-actions .btn{width:auto!important;max-width:100%!important;}
+
+  footer{padding:24px 18px!important;gap:18px!important;align-items:flex-start!important;flex-direction:column!important;}
+  footer img{width:180px!important;height:auto!important;}
+  footer>div{display:flex!important;gap:12px 16px!important;flex-wrap:wrap!important;}
+  footer a{font-size:11px!important;}
+}
+
+@media (max-width: 430px){
+  header{padding:0 14px!important;}
+  header .brand img{width:150px!important;}
+  header>.pill{padding:10px 11px!important;font-size:10px!important;}
+  .hero{padding-left:14px!important;padding-right:14px!important;}
+  .hero-visual{height:45svh!important;min-height:370px!important;}
+  .agenda{padding-left:14px!important;padding-right:14px!important;}
+  .agenda-list .show-head{grid-template-columns:82px minmax(0,1fr) 24px!important;column-gap:9px!important;}
+  .agenda-list .show-head>.date{font-size:24px!important;}
+  .agenda-list .show-head>.city{font-size:18px!important;}
+  .agenda-list .show-head>.plus{width:24px!important;min-width:24px!important;max-width:24px!important;}
+  .videos{padding-left:10px!important;padding-right:10px!important;}
+  .videos .video-grid{gap:6px!important;}
+  .videos .video-copy{padding:7px 4px 8px!important;}
+  .split,.booking{padding-left:14px!important;padding-right:14px!important;}
+}
+
+@media (min-width: 901px) and (max-width: 1180px){
+  header{grid-template-columns:230px minmax(0,1fr) auto!important;column-gap:16px!important;padding-left:3vw!important;padding-right:3vw!important;}
+  header .brand img{width:215px!important;}
+  header nav{gap:13px!important;justify-self:end!important;}
+  header nav a{font-size:11px!important;}
+  header>.pill{font-size:11px!important;padding:12px 15px!important;}
+  .video-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+}

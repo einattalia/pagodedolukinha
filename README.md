@@ -32,3 +32,10 @@ No Admin > Vídeos, arraste os cards pelo ícone ☰. A ordem é persistida no c
 
 ## V16
 Correção definitiva do alinhamento da Agenda: data, cidade e botão + agora usam faixas flex independentes, impedindo sobreposição em desktop e mobile.
+
+## V17 — revisão responsiva
+- Breakpoints consolidados para desktop, tablet e mobile.
+- Agenda mobile usa grid rígido DATA | CIDADE | + para impedir sobreposição.
+- Galeria de vídeos permanece em 3 colunas no mobile, com cards compactos e apenas título.
+- Hero, Resenha, Contato, footer e header receberam composição específica para telas pequenas.
+- Correção de overflow horizontal e dimensionamento fluido de tipografia/imagens.
