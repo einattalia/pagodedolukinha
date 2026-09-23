@@ -515,3 +515,55 @@ img,iframe{max-width:100%}
   header>.pill{font-size:11px!important;padding:12px 15px!important;}
   .video-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
 }
+
+/* V18 — Agenda: separação real entre DATA e CIDADE */
+@media (min-width: 901px){
+  .agenda-list .show-head{
+    display:grid !important;
+    grid-template-columns:minmax(245px, 0.34fr) minmax(0, 1fr) 42px !important;
+    column-gap:34px !important;
+    align-items:center !important;
+  }
+  .agenda-list .show-head > .date{
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    padding:0 !important;
+    margin:0 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    line-height:.95 !important;
+  }
+  .agenda-list .show-head > .city{
+    width:auto !important;
+    min-width:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    line-height:.95 !important;
+  }
+  .agenda-list .show-head > .plus{
+    width:42px !important;
+    min-width:42px !important;
+    max-width:42px !important;
+    margin:0 !important;
+    justify-self:end !important;
+  }
+  .agenda-list .details,
+  .agenda-list .show.open .details{
+    padding-left:calc(245px + 34px) !important;
+  }
+}
+
+@media (min-width: 1200px){
+  .agenda-list .show-head{
+    grid-template-columns:minmax(270px, 0.34fr) minmax(0, 1fr) 42px !important;
+    column-gap:40px !important;
+  }
+  .agenda-list .details,
+  .agenda-list .show.open .details{
+    padding-left:310px !important;
+  }
+}
