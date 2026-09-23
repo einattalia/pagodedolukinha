@@ -39,3 +39,10 @@ Correção definitiva do alinhamento da Agenda: data, cidade e botão + agora us
 - Galeria de vídeos permanece em 3 colunas no mobile, com cards compactos e apenas título.
 - Hero, Resenha, Contato, footer e header receberam composição específica para telas pequenas.
 - Correção de overflow horizontal e dimensionamento fluido de tipografia/imagens.
+
+## V19 — Supabase conectado
+- Frontend configurado com o Project URL do Supabase e a Publishable key.
+- O URL deve ser a raiz do projeto (`https://...supabase.co`), sem `/rest/v1/`; a biblioteca Supabase adiciona as rotas necessárias.
+- Execute `supabase-schema.sql` no SQL Editor do projeto antes de usar o Admin, caso as tabelas/policies ainda não existam.
+- O login do Admin passa a usar Supabase Auth quando a configuração acima está presente.
+- Nunca adicione `service_role` ou Secret key ao frontend.
